@@ -219,7 +219,7 @@ input {
 .boxDobleArticle img {
   /* padding: 1rem; */
   height: auto;
-  width: 236px;
+  width: 230px;
   object-fit: cover;
   align-self: center;
   /* box-shadow: rgb(255, 132, 0) 2px 1px 1px 2px;
@@ -242,7 +242,11 @@ input {
 .text-right {
   text-align: right;
 }
-
+.u-pull-right {
+  position: fixed;
+  left: 90%;
+  top: 20%;
+}
 .table,
 .tableSchedule {
   width: 100%;

@@ -16,24 +16,26 @@
 		<a href="index.html">CARTA</a>
 		<a href="./pages/contacto.html">CONTACTO</a>
 		<a href="./pages/nuevos-clientes.html">PAGAMENTO</a>
-		<div class=" u-pull-right">
-			<div class="contenedorPedido" >
-				<a href="#modalPedido">
-				<button id="abrirCarrito" onClick="muestra_oculta('modalPedido')">
-					<img src="./img/cart.png" id="img-carrito" class="logoBrand"><p id="agregados"></p>
-				</button>
-				</a>
 
-			</div>
-		</div>
 	</nav>
 	<header class="bannerImg">
 		<h1 class="headerH1"> <strong>PIZZAS</strong></h1>
 	</header>
 	<main>
+		<div class=" u-pull-right">
+			<div class="contenedorPedido" >
+
+				<button id="abrirCarrito" onClick="muestra_oculta('modalPedido')">
+					<img src="./img/cart.png" id="img-carrito" class="logoBrand"><p id="agregados"></p>
+				</button>
+
+
+			</div>
+		</div>
 		<div class="contenedorModalPedido">
 			<div id="modalPedido">
 				<button onClick="muestra_oculta('modalPedido')">X</button>
+				<h3>Seu pedido</h3>
 				<div id="pizzasEscholido">
 
 				</div>	
