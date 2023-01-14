@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../pages/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Pagamento</title>
+
+</head>
+
+<body>
+
+    <nav class="menu" style="background-color: #EEBF79;">
+        <a href="../pages/patron.html">HOME</a>
+        <a href="/projeto/index.html">CARTA</a>
+        <a href="../pages/contacto.html">CONTACTO</a>
+        <a href="../pages/nuevos-clientes.html">PAGAMENTO</a>
+        <div class=" u-pull-right">
+            <ul>
+                <li class="submenu">
+                    <img src="../img/cart.png" id="img-carrito" class="logoBrand">
+                    <div id="carrito">
+
+                        <table id="lista-carrito" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                        </table>
+
+                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="bannerImg">
+
+        <h1 class="headerH1"> <strong>PIZZAS</strong></h1>
+    </header>
+    <div class="container">
+        <section class="form">
+
+            <div class="container">
+                <!--col-12 bg-light-->
+
+                <div class="row">
+                    <div class="col">
+                        <!--col-12 col-md-8 order-2 order-md-1 mb-3-->
+                        <h4 class="mb-3">Dados formulario compra</h4>
+                        <form id="form" action="#conferir">
+                            <div class="row mb-3">
+                                <div class="col-12 col-sm-6 mb-3">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre">
+                                </div>
+                                <div class="col-12 col-sm-6 mb-3">
+                                    <label for="correo" class="form-label">Correo</label>
+                                    <input type="text" class="form-control" id="correo" name="correo">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-12 col-sm-6 mb-3">
+                                    <label for="usuario" class="form-label">Usuario</label>
+                                    <div class="input-group">
+                                        <input type="text" id="usuario" class="form-control" placeholder="Usuario">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-12 col-sm-6 mb-3">
+                                    <label class="form-label" for="correo">Correo <span
+                                            class="text-muted">(Opcional)</span></label>
+                                    <input type="email" class="form-control" placeholder="nombre@correo.com"
+                                        name="correo">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-12 col-sm-6 mb-3">
+                                    <label class="form-label" for="direccion">Direccion</label>
+                                    <input type="text" class="form-control" placeholder="1234 Calle Principal"
+                                        name="direccion">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-12 col-sm-6 mb-3">
+                                    <label class="form-label" for="direccion2">Direccion 2</label>
+                                    <input type="text" class="form-control"
+                                        placeholder="Interior o informacion adicional" name="direccion2">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 col-sm-4 mb-3">
+                                    <label for="pais" class="form-label">Pais</label>
+                                    <select name="pais" id="pais" class="form-select">
+                                        <option value="">Seleccionar Pais</option>
+                                        <option value="mexico">Mexico</option>
+                                        <option value="españa">España</option>
+                                        <option value="colombia">Colombia</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-4 mb-3">
+                                    <label for="pais" class="form-label">Estado</label>
+                                    <select name="pais" id="pais" class="form-select">
+                                        <option value="">Seleccionar Estado</option>
+                                        <option value="mexico">Mexico</option>
+                                        <option value="españa">España</option>
+                                        <option value="colombia">Colombia</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-4 mb-3">
+                                    <label for="codigo-postal" class="form-label">Codigo Postal</label>
+                                    <input type="text" id="codigo-postal" class="form-control">
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="misma-direccion">
+                                        <label for="misma-direccion" class="form-label">Enviar a la misma direccion de
+                                            facturacion</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="guardar-informacion">
+                                        <label for="guardar-informacion" class="form-label">Guardar informacion para la
+                                            siguiente compra</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="row mb-3">
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input type="radio" name="metodo-pago" class="form-check-input"
+                                            id="tarjeta-credito">
+                                        <label for="tarjeta-credito" class="form-check-label">Tarjeta de
+                                            Credito</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" name="metodo-pago" class="form-check-input"
+                                            id="tarjeta-debito">
+                                        <label for="tarjeta-debito" class="form-check-label">Tarjeta de Debito</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" name="metodo-pago" class="form-check-input" id="paypal">
+                                        <label for="paypal" class="form-check-label">Paypal</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 col-sm-6 mb-3">
+                                    <label class="form-label" for="nombre-tarjeta">Nombre en la tarjeta</label>
+                                    <input type="text" id="nombre-tarjeta" class="form-control">
+                                    <small class="text-muted">Nombre completo como se muestra en la tarjeta</small>
+                                </div>
+                                <div class="col-12 col-sm-6 mb-3">
+                                    <label class="form-label" for="numero-tarjeta">Numero de tarjeta</label>
+                                    <input type="text" id="numero-tarjeta" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6 col-sm-4 mb-3">
+                                    <label class="form-label" for="tarjeta-expiracion">Expiracion</label>
+                                    <input type="text" id="tarjeta-expiracion" class="form-control">
+                                </div>
+                                <div class="col-6 col-sm-4 mb-3">
+                                    <label class="form-label" for="tarjeta-ccv">CVV</label>
+                                    <input type="text" id="tarjeta-ccv" class="form-control">
+                                </div>
+                            </div>
+
+                            <hr class="mb-4">
+                            <input type="submit" value="Conferencia y Checkout"
+                                class="btn btn-block btn-lg btn-primary">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 order-1 order-md-2 mb-3" id="conferir">
+                <h2>
+                    The following information has been sent as your
+                    feedback:
+                </h2>
+
+                <table>
+                    <tr>
+                        <th>Form Field</th>
+                        <th>Field Value</th>
+                    </tr>
+
+                </table>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="container">
+            <a href="#"><img src="../img/labenu.PNG" alt=""></i></a>
+        </div>
+        <p>@COMPRAS VERIFICADAS PELO 78945287953 LIGUE 11-58888-4257</p>
+    </footer>
+
+
+    <script src="../js/app.js"></script>
+    <script src="../js/info.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./pages/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./css/stylePatron.css">
+	<title>Carta</title>
+</head>
+
+<body>
+	<nav class="navbar" style="background-color: #EEBF79;">
+		<a href="./pages/patron.html">HOME</a>
+		<a href="index.html">CARTA</a>
+		<a href="./pages/contacto.html">CONTACTO</a>
+		<a href="./pages/nuevos-clientes.html">PAGAMENTO</a>
+		<div class=" u-pull-right">
+			<div class="contenedorPedido" >
+				<a href="#modalPedido">
+				<button id="abrirCarrito" onClick="muestra_oculta('modalPedido')">
+					<img src="./img/cart.png" id="img-carrito" class="logoBrand"><p id="agregados"></p>
+				</button>
+				</a>
+
+			</div>
+		</div>
+	</nav>
+	<header class="bannerImg">
+		<h1 class="headerH1"> <strong>PIZZAS</strong></h1>
+	</header>
+	<main>
+		<div class="contenedorModalPedido">
+			<div id="modalPedido">
+				<button onClick="muestra_oculta('modalPedido')">X</button>
+				<div id="pizzasEscholido">
+
+				</div>	
+				<p>Total a pagar:</p>	
+				<p id="precoTotal"></p>			
+				</div>
+		</div>
+
+
+		<div id="listaPizzas">
+		</div>
+	</main>
+
+	<footer>
+		<div class="container">
+			<a href="#"><i class="fa-brands fa-github"></i></a>
+			<a href="#"><i class="fa-regular fa-envelope"></i></a>
+			<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+		</div>
+		<div class="container">
+			<a href="#"><img src="./img/labenu.PNG" alt=""></i></a>
+		</div>
+		<p>@COMPRAS VERIFICADAS PELO 78945287953 LIGUE 11-58888-4257</p>
+	</footer>
+
+	<script src="./js/modal.js"></script>
+	<script src="./js/info.js"></script>
+	<script src="./js/app.js"></script>
+
+</body>
+
+</html>

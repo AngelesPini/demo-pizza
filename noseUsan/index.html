@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"
+		integrity="sha512-HHsOC+h3najWR7OKiGZtfhFIEzg5VRIPde0kB0bG2QRidTQqf+sbfcxCTB16AcFB93xMjnBIKE29/MjdzXE+qw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="../css/styles.css">
+	<title>Home</title>
+
+</head>
+
+<body>
+
+
+	<style>
+		#img-carrito {
+			height: 80px;
+		}
+
+		.borrar-curso {
+			background-color: red;
+			border-radius: 50%;
+			padding: 5px 10px;
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		#hero {
+			background-image: url(../img/hero.jpg);
+			height: 350px;
+			background-size: cover;
+		}
+
+		#encabezado {
+			margin: 30px 0;
+		}
+
+		.submenu {
+			position: relative;
+		}
+
+		.submenu #carrito {
+			display: none;
+		}
+
+		.submenu:hover #carrito {
+			display: block;
+			position: absolute;
+			right: 0;
+
+			top: 100%;
+			z-index: 1;
+			background-color: white;
+			padding: 20px;
+			min-height: 400px;
+			min-width: 300px;
+		}
+
+		.vacio {
+			padding: 10px;
+			background-color: crimson;
+			text-align: center;
+			border-radius: 10px;
+			color: white;
+		}
+
+		.contenido-hero {
+			margin-top: 80px;
+			color: white;
+		}
+
+		.contenido-hero form {
+			position: relative;
+			margin-bottom: 0;
+		}
+
+		.contenido-hero form #buscador {
+			height: 50px;
+			margin-bottom: 0;
+		}
+
+		.contenido-hero form .submit-buscador {
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 100%;
+			padding: 0;
+			display: block;
+			text-indent: -9999px;
+			width: 50px;
+			background-image: url(../img/lupa.png);
+			background-position: right center;
+			background-repeat: no-repeat;
+			border: none;
+		}
+
+
+		.barra {
+			padding: 20px 0;
+			background: #741d51;
+			/* Old browsers */
+			background: -moz-linear-gradient(left, #741d51 0%, #e44e52 100%);
+			/* FF3.6-15 */
+			background: -webkit-linear-gradient(left, #741d51 0%, #e44e52 100%);
+			/* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to right, #741d51 0%, #e44e52 100%);
+			/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+	*/
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#741d51', endColorstr='#e44e52', GradientType=1);
+			/* IE6-9 */
+		}
+
+		.barra p {
+			margin: 0;
+			color: white;
+		}
+
+		.icono {
+			background-repeat: no-repeat;
+			background-position: left center;
+			padding-left: 60px;
+			background-size: 30px;
+			margin-bottom: 40px;
+			text-align: center;
+		}
+
+		@media (min-width: 750px) {
+			.icono {
+				margin-bottom: 0;
+			}
+		}
+
+		.icono1 {
+			background-image: url(../img/icono1.png);
+		}
+
+		.icono2 {
+			background-image: url(../img/icono2.png);
+		}
+
+		.icono3 {
+			background-image: url(../img/icono3.png);
+		}
+
+		#lista-cursos .row {
+			margin-bottom: 20px;
+		}
+
+		.agregar-carrito {
+			margin: 10px 0;
+		}
+	</style>
+
+	<nav class="menu">
+		<a href="../mi-sitio/patron.html">HOME</a>
+		<a href="../mi-sitio/carta.html">CARTA</a>
+		<a href="../mi-sitio/contacto.html">CONTACTO</a>
+		<a href="../clientes/club-clientes.html">club-clientes</a>
+		<a href="../clientes/mis-compras.html">mis-compras</a>
+		<a href="../clientes/nuevos-clientes.html">NUEVOS CLIENTES</a>
+		<div class=" u-pull-right">
+			<ul>
+				<li class="submenu">
+					<img src="../img/cart.png" id="img-carrito" class="logoBrand">
+					<div id="carrito">
+
+						<table id="lista-carrito" class="u-full-width">
+							<thead>
+								<tr>
+									<th>Imagen</th>
+									<th>Nombre</th>
+									<th>Precio</th>
+									<th>Cantidad</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody></tbody>
+						</table>
+
+						<a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<header class="banner__img">
+
+
+
+		<p class="header__p">Dulzuras FAVORITAS </em></p>
+
+		<h1 class="header__h1"> <strong class="strong_header1">Postres ARGENTINOS</strong>
+		</h1>
+
+
+	</header>
+	<main>
+		<section class="section-1">
+			<!-- 
+		<h2 id="subtitle" >
+			Subtitulo C<p>o</p>ntenido Principal		</h2>
+		<section>
+			<h2 class="section__title" id="subtitle-s1">Titulo de 1 Seccion</h2>
+
+
+			<p class="text__simple">Este es un parragrafo com texto estilizado comun!</p>
+		</section>
+		<section>
+			<h2 class="section__title" id="subtitle-s2">Titulo de 1 Seccion</h2>
+
+
+			<p class="text__simple">Este es un parragrafo com texto estilizado comun!</p>
+		</section>
+	 -->
+
+			<article>
+				<h2 class="section__title" id="subtitle-s2">Titulo de 1 Seccion</h2>
+
+
+				<p class="text__simple">Este es un parragrafo com texto estilizado comun!</p>
+			</article>
+
+			<article>
+				<h2 class="section__title" id="subtitle-s2">Titulo de 1 Seccion</h2>
+
+
+				<p class="text__simple">Este es un parragrafo com texto estilizado comun!</p>
+			</article>
+
+			<article>
+				<h2 class="section__title" id="subtitle-s2">Titulo de 1 Seccion</h2>
+
+
+				<p class="text__simple">Este es un parragrafo com texto estilizado comun!</p>
+			</article>
+		</section>
+		<section class="section-2">
+			<article>
+				<h2 class="section__title" id="subtitle-s2">Titulo de 1 Seccion</h2>
+
+
+				<p class="text__simple">Este es un parragrafo com texto estilizado comun!</p>
+			</article>
+
+			<article>
+				<h2 class="section__title" id="subtitle-s2">Titulo de 1 Seccion</h2>
+
+
+				<p class="text__simple">Este es un parragrafo com texto estilizado comun!</p>
+			</article>
+
+			<article>
+				<h2 class="section__title" id="subtitle-s2">Titulo de 1 Seccion</h2>
+
+
+				<p class="text__simple">Este es un parragrafo com texto estilizado comun!</p>
+			</article>
+		</section>
+	</main>
+
+	<script src="js/script.js"></script>
+
+
+	<footer>
+		<div class="container">
+			<a href="#"><i class="fa-brands fa-github"></i></a>
+			<a href="#"><i class="fa-regular fa-envelope"></i></a>
+			<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+		</div>
+		<div class="container">
+			<a href="#"><img src="../img/labenu.PNG" alt=""></i></a>
+		</div>
+		<p>@COMPRAS VERIFICADAS PELO 78945287953 LIGUE 11-58888-4257</p>
+	</footer>
+</body>
+
+</html>

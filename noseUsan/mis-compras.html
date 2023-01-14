@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/stylePatron.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <nav class="menu" style="background-color: #EEBF79;">
+    <a href="../pages/club-clientes.html">HOME</a>
+    <a href="/projeto/index.html">CARTA</a>
+    <a href="../pages/contacto.html">CONTACTO</a>
+    <a href="../pages/nuevos-clientes.html">NUEVOS CLIENTES</a>
+    <div class=" u-pull-right">
+      <ul>
+        <li class="submenu">
+          <img src="../img/cart.png" id="img-carrito" class="logoBrand">
+          <div id="carrito">
+
+            <table id="lista-carrito" class="u-full-width">
+              <thead>
+                <tr>
+                  <th>Imagen</th>
+                  <th>Nombre</th>
+                  <th>Precio</th>
+                  <th>Cantidad</th>
+                  <th></th>
+                </tr>
+              </thead>
+            </table>
+
+            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header class="bannerImg">
+
+    <h1 class="headerH1"> <strong>PIZZAS</strong></h1>
+  </header>
+
+  <main class="container">
+    <section class="section__container">
+      <div id="myApp">
+        <form action="" method="GET">
+          <label for="primerNombre_Usuario">Nombre de Pila: </label>
+          <input type="text" for="realUser" id="primerNombre_Usuario" placeholder="Pepe Suarez">
+          <!-- FOR = ES PARA -- label es para este input -->
+
+          <label for="apellido_Usuario">Apellido </label>
+          <input type="text" name="apellido_Usuario" id="apellido_Usuario">
+
+          <!-- NUMBER -->
+
+          <label for="edadUser"> Ingrese su EDAD</label>
+          <input type="number" name="edadUser" id="edadUser" min="18" max="120" maxlength="3" value="18">
+
+
+          <!-- EMAIL -->
+          <p>
+            <label for="emailUser">E-mail</label>
+            <input type="email" name="emailUser" id="emailUser" minlength="9" maxlength="250" pattern=".+@.+\.com">
+
+
+          </p>
+          <!-- fecha -->
+
+          <label class="dateBirth">Fecha Cumple </label>
+          <input type="date" name="dateBirth" id="dateBirth">
+
+
+          <!-- PASSWORD -->
+          <p>
+            <label for="passwordUser">Contrasena</label>
+            <input type="password" name="passwordUser"
+              pattern="[(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$]" id="passwordUser"
+              minlength="5" maxlength="8" size="8" required="">
+          </p>
+          <label>COLOR PICKER
+            <input type="color" name="colorForUser" id="colorForUser">
+
+          </label>
+
+          <fieldset>
+            <legend>CHECK SELECT</legend>
+            <label for="opt1">
+
+              <input type="checkbox" name="opt1" value="check01"> CHECK #01
+            </label>
+            <label for="opt1">
+              <input type="checkbox" name="opt1" value="check02"> CHECK #02
+            </label>
+            <label for="opt1">
+              <input type="checkbox" name="opt1" value="check03"> CHECK #03
+
+            </label>
+
+          </fieldset>
+
+          <fieldset>
+            <legend>CHECK OPTIONS</legend>
+            <label for="opt1">
+              <input type="checkbox" name="opt1" value="check01"> CHECK #01
+            </label>
+            <label for="opt1">
+              <input type="checkbox" name="opt1" value="check02"> CHECK #02
+            </label>
+            <label for="opt1">
+              <input type="checkbox" name="opt1" value="check03"> CHECK #03
+            </label>
+          </fieldset>
+          <button type="submit">Enviar datos</button>
+
+        </form>
+      </div>
+    </section>
+  </main>
+  <aside>
+    <div class="temaPagina">
+      <a href="temaPagina01.html">
+
+        <div class="temaPagina-div">
+          <p class="temaPagina-name">mascota</p>
+          <p class="temaPagina-slogan">banner</p>
+        </div>
+      </a>
+    </div>
+  </aside>
+
+  <footer>
+    <div class="container">
+      <a href="#"><i class="fa-brands fa-github"></i></a>
+      <a href="#"><i class="fa-regular fa-envelope"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <div class="container">
+      <a href="#"><img src="../img/labenu.PNG" alt=""></i></a>
+    </div>
+    <p>@COMPRAS VERIFICADAS PELO 78945287953 LIGUE 11-58888-4257</p>
+  </footer>
+
+  <script src="../js/app.js"></script>
+  <script src="../js/info.js"></script>
+
+
+</body>
+
+</html>

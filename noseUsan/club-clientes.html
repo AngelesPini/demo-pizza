@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../mi-sitio/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"
+        integrity="sha512-HHsOC+h3najWR7OKiGZtfhFIEzg5VRIPde0kB0bG2QRidTQqf+sbfcxCTB16AcFB93xMjnBIKE29/MjdzXE+qw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Home</title>
+
+</head>
+
+<body>
+
+
+    <nav class="menu" style="background-color: #EEBF79;">
+        <a href="../pages/club-clientes.html">HOME</a>
+        <a href="/projeto/index.html">CARTA</a>
+        <a href="../pages/contacto.html">CONTACTO</a>
+        <a href="../pages/club-clientes.html">club-clientes</a>
+        <a href="../pages/mis-compras.html">mis-compras</a>
+        <a href="../pages/nuevos-clientes.html">NUEVOS CLIENTES</a>
+        <div class=" u-pull-right">
+            <ul>
+                <li class="submenu">
+                    <img src="../img/cart.png" id="img-carrito" class="logoBrand">
+                    <div id="carrito">
+
+                        <table id="lista-carrito" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+
+                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <header class="bannerImg">
+
+
+
+        <h1 class="headerH1"><strong>PIZZAS</strong></h1>
+
+
+    </header>
+
+
+
+    <main class="container flex flex--centro flex--coluna">
+        <section class="cartao cadastro">
+            <h1 class="cartao__titulo">Cadastrar um produto</h1>
+            <form action="./cadastro_produto_concluido.html" class="flex flex--coluna">
+                <div class="input-container">
+                    <input name="nome" id="nome" class="input" type="text" placeholder="Nome">
+                    <label class="input-label" for="nome">Nome</label>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container cadastro__preco-container">
+                    <input name="preco" id="preco" class="input" type="text" placeholder="Preço">
+                    <label class="input-label" for="preco">Preço</label>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container cadastro__descricao-container">
+                    <input class="input" name="descricao" id="descricao" placeholder="Descrição">
+                    <label class="input-label" for="descricao">Descrição</label>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <button class="botao">Cadastrar produto</button>
+            </form>
+        </section>
+    </main>
+
+    </form>
+
+
+
+    <footer>
+        <div class="container">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="container">
+            <a href="#"><img src="../img/labenu.PNG" alt=""></i></a>
+        </div>
+        <p>@COMPRAS VERIFICADAS PELO 78945287953 LIGUE 11-58888-4257</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/info.js"></script>
+
+</body>
+
+</html>

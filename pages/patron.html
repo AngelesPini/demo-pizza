@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../pages/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/stylePatron.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Buscador</title>
+
+    <style>
+        form {
+            text-align: center;
+            margin-top: 1rem;
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" style="background-color: #EEBF79;">
+        <a href="../pages/patron.html">HOME</a>
+        <a href="../index.html">CARTA</a>
+        <a href="../pages/contacto.html">CONTACTO</a>
+        <a href="../pages/nuevos-clientes.html">PAGAMENTO</a>
+		<div class=" u-pull-right">
+			<div class="contenedorPedido" >
+				<a href="../index.html">
+				<button id="abrirCarrito" onClick="muestra_oculta('modalPedido')">
+					<img src="../img/cart.png" id="img-carrito" class="logoBrand"><p id="agregados"></p>
+				</button>
+				</a>
+
+			</div>
+		</div>
+    </nav>
+    <header class="bannerImg">
+        <h1 class="header__h1"><strong>PIZZA</strong></h1>
+    </header>
+    <form action="get"> <input type="text"></form>
+    <main class="row ul" id="contenedor">
+        <section>
+            <div id="containOne">
+                <!---<div class="card-body-contain">-->
+                <p class="card-text">Nome:</p>
+                <ul>
+                    <li>
+                        <img src="../img/Brocoli2.PNG" class="carLd-img-top" alt="...">
+                    </li>
+                    <li class="list-group-item">Pizza portuguesa ingredientes:</li>
+                </ul>
+                <!---</div>-->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="container"><a href="#"><img src="../img/labenu.PNG" alt=""></i></a></div>
+        <p>@COMPRAS VERIFICADAS PELO 78945287953 LIGUE 11-58888-4257</p>
+    </footer>
+
+	<script src="./js/modal.js"></script>
+	<script src="./js/info.js"></script>
+	<script src="./js/app.js"></script>
+
+</body>
+
+</html>
