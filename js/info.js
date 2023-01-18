@@ -514,7 +514,7 @@ let arraySabores = [
     {
         id: 44,
         nome: "Chocobanana",
-        ingrendientes: " Chocolate e banana",
+        ingredientes: " Chocolate e banana",
         preco: 49.99,
         Categoria: "sobremesa",
         Vegetariano: false,
@@ -585,7 +585,7 @@ let arraySabores = [
     {
         id: 50,
         nome: "Pacoca ||",
-        ingrendientes: "Mucarela, Doce de leite especial e Pacoca",
+        ingredientes: "Mucarela, Doce de leite especial e Pacoca",
         preco: 49.99,
         Categoria: "sobremesa",
         Vegetariano: false,

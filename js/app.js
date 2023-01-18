@@ -2,8 +2,12 @@ let menu = document.getElementById("listaPizzas")
 const pizzasEscholido = document.getElementById("pizzasEscholido");
 const agregados = document.getElementById("agregados");
 const precoTotal = document.getElementById("precoTotal");
-
+const buscador = document.getElementById('search')
 let Carrito = []
+
+
+
+
 
 mostrarProducto(arraySabores);
 
@@ -29,6 +33,8 @@ function mostrarProducto(array) {
 				<li>Veggie? <span>${Pizza.Vegetariano}</span> </li>
 				<li>Preco:<span> ${Pizza.preco}</span> </li>
 			  </ul>
+			  <input id='mostrador'/>
+				<button id="add1">+</button>
 			  </div>
 				<button class="btnAdd" id="agregar${Pizza.id}">Adicionar pizza</button>
 
@@ -42,11 +48,24 @@ function mostrarProducto(array) {
 			adicionarProducto(Pizza.id)
 			alert("Producto Adicionado!!!")
 		})
+		let mostrador = document.getElementById('mostrador')
+		let valorAgregado = 0;
+		let sumar = document.getElementById('add1')
+		sumar.onclick = () => {
+			valorAgregado++
+			mostrador.textContent('p')
+			console.log(valorAgregado+1)
+		}
 
 	}
+
+
 }
 
-
+buscador.addEventListener('input', ()=>{
+    // operador ternario (if....else)
+        buscador.value == "" ? mostrarProducto(arraySabores) : mostrarProducto(arraySabores.filter(el => el.nome.toLocaleLowerCase().includes(buscador.value.toLocaleLowerCase())))
+    })
 function adicionarProducto(id) {
 	let adicionar = Carrito.find(item => item.id == id)
 	if (adicionar) {
